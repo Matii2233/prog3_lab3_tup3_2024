@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <title>Vite App</title>
+    <link rel="stylesheet" href="./style.css"></link>
+  </head>
+  <body>
+    <header>
+      <h1 class="h1-header">Trabajo Practico Nro 3 JavaScript</h1>
+    </header>
+
+    <main>
+      <div id="app"></div>
+      <script type="module" src="/main.js"></script>
+
+      <h2>Evento DOM</h2>
+      <div class="main-box">
+        <p class="text1" id="element1">elemento 1</p>
+        <p class="text1" id="element2">elemento 2</p>
+        <p class="text1" id="element3">elemento 3</p>
+        <button class="event-button" id="button">cambiar color</button>
+      </div>
+
+      <h2>Formulario Con Alerta</h2>
+      <form class="main-box-2">
+        <div>
+          <label>ingrese un texto:
+            <input id="input1" type="text">
+          </label>
+        </div>
+        <button class="form-button" id="buttonInput">Mostrar Alerta</button>
+      </form>
+
+      <h2>Lista Con Elementos</h2>
+      <ul class="main-box-3">
+        <li id="e1">elemento 1</li>
+        <li id="e2">elemento 2</li>
+        <li id="e3">elemento 3</li>
+        <li id="e4">elemento 4</li>
+      </ul>
+
+      <h2>Campo De Texto Y Botones</h2>
+      <div class="main-box-4">
+        <input type="text" placeholder="Escriba algo" id="textInput">
+        <div class="buttons-box-1">
+          <button class="form-button-2" id="disButton">Deshabilitar Campo</button>
+          <button class="form-button-2" id="ablButton">Habilitar Campo</button>
+        </div>
+      </div>
+
+      <h2>Guardado Local De Un Formulario</h2>
+      <form class="main-box-5">
+        <div>
+          <label>Correo Electrónico:
+            <input type="email" id="emailInput">
+          </label>
+          <button class="form-button-2" id="saveButton">Guardar Correo</button>
+        </div>
+        <div class="mini-box-1">
+          <p class="show-email-text" id="mostrarEmail"></p>
+          <button class="form-button-2" id="deleteButton">Eliminar Correo</button>
+        </div>
+      </form>
+    </main>
+
+    <footer>
+
+    </footer>
+  </body>
+</html>
