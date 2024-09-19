@@ -1,0 +1,346 @@
+/* + + +  GENERALES  + + + + */
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: "Rubik", sans-serif;
+}
+
+
+
+
+/* + + +  HEADER  + + + + */
+
+.header-main-container{
+    width: 100vw;
+    height: 8vh;
+    background-color: rgba(0, 61, 131, 0.808);
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.header-container-1{
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+    padding: 0.4rem;
+}
+
+.searchBar-container-1{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1vh;
+}
+
+.header-input-1{
+    border: none;
+    outline: none;
+    border-radius: 0.9rem;
+    padding: 0.5rem;
+    width: 20vw;
+    height: 2vh;
+    font-size: 1.8vh;
+}
+
+.header-searchButton{
+    border-radius: 1rem;
+    border: 1px solid white;
+    background-color: transparent;
+    padding: 0.2rem 0.6rem 0.2rem 0.9rem;
+    color: white;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 0.4vw;
+}
+
+.header-addButton{
+    border-radius: 1rem;
+    border: 1px solid white;
+    background-color: transparent;
+    color: white;
+    padding: 0.2rem 0.9rem 0.2rem 0.3rem;
+
+    display: flex;
+    align-items: center;
+    gap: 0.4vw; 
+}
+
+.header-searchButton:hover, .header-addButton:hover{
+    cursor: pointer;
+    background-color: rgba(78, 147, 226, 0.644);
+}
+
+
+
+
+/* + + +  MAIN  + + + + */
+
+.main-container-view{
+    display: grid;
+    grid-template-columns: 0.2fr 0.8fr;
+}
+
+.aside-list{
+    width: 100%;
+    height: 92vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.store{
+    background-color: rgba(128, 164, 204, 0.836);
+    width: 100%;
+    max-height: 92vh;
+    overflow: auto; 
+}
+
+
+
+
+/* + + + + STORE + + + + */
+.sectionStore{
+    background-color: rgb(255, 255, 255);
+    margin: 1rem;
+    padding: 1rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.containerTitleSection {
+    margin-top: 0.4rem;
+    margin-bottom: 1.4rem;
+    font-size: 1.5rem;
+    border-bottom: 2px solid;
+    color: rgba(0, 61, 131, 0.808);
+}
+
+.containerProductStore {
+    width: 100%;
+    padding-bottom: 0.8rem;
+
+    display: grid;
+    grid-template-columns: repeat(3, 0.6fr);
+    gap: 2vw
+}
+
+.containerTargetItem {
+    height: 35vh;
+    padding: 4rem 1rem 4rem 1rem;
+    box-shadow: 2px 2px 5px 4px rgba(0,0,0,0.3);
+    border-radius: 0.4rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2vh;
+
+    transition: 0.2s ease;
+}
+
+.containerTargetItem:hover{
+    cursor: pointer;
+    transform: scale(1.04)
+}
+
+.sectionStore img {
+    width: 100%;
+    border-radius: 0.6rem;
+    margin-bottom: 1rem;
+}
+
+.productName{
+    font-size: 2.2vh;
+    margin-bottom: 1rem;
+
+
+}
+
+.targetProps {
+    width: 100%;
+    font-size: 2vh;
+
+    display: flex;
+    justify-content: flex-start;
+}
+
+
+
+
+/* + + + + LIST ASIDE + + + + */
+.aside-list h2{
+    margin-top: 2vh;
+    font-size: 3.2vh;
+    color: rgba(0, 61, 131, 0.808);
+    font-weight: 750;
+    border-bottom: 2px solid rgba(0, 61, 131, 0.808);
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.aside-list ul{
+    margin-top: 3vh;
+    list-style: none;
+    font-size: 2vh;
+    font-weight: 600;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    gap: 1vh;
+}
+
+.aside-list li{
+    padding: 0.4rem;
+    border-radius: 1rem;
+
+    transition: 0.1s;
+}
+
+.aside-list li:hover{
+    cursor: pointer;
+    background-color: rgba(0, 61, 131, 0.808);
+    color: white;
+}
+
+.liActive{
+    text-decoration: underline;
+    color: rgba(0, 61, 131, 0.808);
+    font-size: 2.4vh;
+}
+
+
+
+
+/* + + + + PUPUP + + + + */
+.popup-mainContainer {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    backdrop-filter: blur(1px);
+
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-container {
+    width: 50vw;
+    height: 46vh;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 5px 2px 10px 10px rgba(0,0,0,0.3);
+    border-radius: 1rem;
+    padding: 0rem 0rem 2rem 0rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.popup-container h2{
+    background-color: rgba(0, 61, 131, 0.808);
+    border-radius: 1rem 1rem 0rem 0rem;
+    padding: 1rem 0rem 1rem 0rem;
+    color: white;
+    text-align: center;
+}
+
+.popup-inputsContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2.333vh
+}
+
+.popup-inputsContainer input{
+    width: 60%;
+    border: 0.11rem solid rgb(51, 51, 51);
+    padding: 0.4rem 0rem 0.4rem 0.6rem;
+    border-radius: 0.6rem;
+}
+
+.popup-inputsContainer select {
+    width: 61.5%;
+    border: 0.11rem solid rgb(51, 51, 51);
+    padding: 0.35rem 0rem 0.3rem 0.5rem;
+    border-radius: 0.6rem;
+}
+
+.popup-buttonsContainer{
+    display:flex;
+    justify-content: space-around;
+}
+
+.popup-buttonsSubContainer button{
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    border: outset black;
+    border-radius: 0.8rem;
+    font-weight: 600;
+    font-size: 1rem;
+
+
+}
+
+.popup-buttonsSubContainer button:hover{
+    cursor: pointer;
+    background-color: rgba(128, 128, 128, 0.849);
+}
+
+.popup-acceptButton{
+   padding: 0.5rem 1rem 0.5rem 1rem;
+   border: outset rgba(0, 61, 131, 0.808);
+   border-radius: 0.8rem;
+   font-weight: 600;
+   font-size: 1rem;
+   color: white;
+   background-color: rgba(0, 81, 173, 0.808);
+}
+
+.popup-acceptButton:hover{
+    cursor: pointer;
+    background-color: rgba(31, 95, 168, 0.685);
+}
+
+
+
+
+/* + + + + MEDIAS QUERYS + + + + */
+@media screen and (min-width: 1280px) {
+    .containerProductStore {
+        grid-template-columns: repeat(4, 0.6fr);
+    }
+    
+    .containerTargetItem {
+        height: 15vw;
+    }
+}
+
+/* scrollbar */
+::-webkit-scrollbar{
+    width: 0.7rem;
+    background-color: rgba(144, 180, 223, 0.836);
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: rgb(26, 84, 150);
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background-color: rgba(49, 115, 190, 0.808);
+}
